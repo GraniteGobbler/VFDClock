@@ -6,7 +6,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "B"
+		(property "Reference" "VFD"
 			(at -15.24 5.08 0)
 			(effects
 				(font
@@ -52,7 +52,7 @@
 		(symbol "IV-22_VFD_Tube_0_1"
 			(polyline
 				(pts
-					(xy -12.065 1.27) (xy -12.065 -0.635)
+					(xy -12.065 1.27) (xy -12.065 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -75,9 +75,9 @@
 				)
 			)
 			(arc
-				(start -9.525 -3.175)
-				(mid -11.3211 -2.4311)
-				(end -12.065 -0.635)
+				(start -9.525 -3.81)
+				(mid -11.3211 -3.0661)
+				(end -12.065 -1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -208,7 +208,7 @@
 			)
 			(polyline
 				(pts
-					(xy -0.7823 -2.5513) (xy -1.4173 -2.5513)
+					(xy -0.7879 -3.1676) (xy -1.4229 -3.1676)
 				)
 				(stroke
 					(width 0)
@@ -219,9 +219,9 @@
 				)
 			)
 			(arc
-				(start -1.27 -3.175)
-				(mid 0 -1.905)
-				(end 1.27 -3.175)
+				(start -1.2756 -3.7913)
+				(mid -0.0056 -2.5213)
+				(end 1.2644 -3.7913)
 				(stroke
 					(width 0)
 					(type default)
@@ -375,9 +375,9 @@
 				)
 			)
 			(arc
-				(start 12.065 -0.635)
-				(mid 11.3211 -2.4311)
-				(end 9.525 -3.175)
+				(start 12.065 -1.27)
+				(mid 11.3211 -3.0661)
+				(end 9.525 -3.81)
 				(stroke
 					(width 0)
 					(type default)
@@ -388,7 +388,7 @@
 			)
 			(polyline
 				(pts
-					(xy 9.525 -3.175) (xy -9.525 -3.175)
+					(xy 9.525 -3.81) (xy -9.525 -3.81)
 				)
 				(stroke
 					(width 0)
@@ -400,7 +400,7 @@
 			)
 			(polyline
 				(pts
-					(xy 12.065 -0.635) (xy 12.065 1.27)
+					(xy 12.065 -1.27) (xy 12.065 1.27)
 				)
 				(stroke
 					(width 0)
@@ -437,7 +437,7 @@
 				)
 			)
 			(text "-"
-				(at -2.2469 -2.4562 0)
+				(at -2.2525 -3.0725 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -445,7 +445,7 @@
 				)
 			)
 			(pin input line
-				(at -14.605 0 0)
+				(at -14.605 -0.635 0)
 				(length 2.54)
 				(hide yes)
 				(name ""
@@ -536,7 +536,7 @@
 				)
 			)
 			(pin input line
-				(at -1.27 -5.715 90)
+				(at -1.27 -6.35 90)
 				(length 2.54)
 				(name ""
 					(effects
@@ -572,7 +572,7 @@
 				)
 			)
 			(pin input line
-				(at 1.27 -5.715 90)
+				(at 1.27 -6.35 90)
 				(length 2.54)
 				(name ""
 					(effects
