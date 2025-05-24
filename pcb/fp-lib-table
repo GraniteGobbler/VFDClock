@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Vacuum_Tubes")(type "KiCad")(uri "${KIPRJMOD}/Vacuum_Tubes.pretty")(options "")(descr ""))
+)
