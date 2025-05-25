@@ -32,7 +32,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://IV-22.pdf"
-			(at 0 0.635 0)
+			(at 0 -14.224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50,42 +50,6 @@
 			)
 		)
 		(symbol "IV-22_VFD_Tube_0_1"
-			(polyline
-				(pts
-					(xy -12.065 1.27) (xy -12.065 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -12.065 1.27)
-				(mid -11.3211 3.0661)
-				(end -9.525 3.81)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -9.525 -3.81)
-				(mid -11.3211 -3.0661)
-				(end -12.065 -1.27)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -9.525 3.175) (xy -8.255 3.175)
@@ -352,66 +316,6 @@
 			)
 			(polyline
 				(pts
-					(xy 9.525 3.81) (xy -9.525 3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 9.525 3.81)
-				(mid 11.3211 3.0661)
-				(end 12.065 1.27)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 12.065 -1.27)
-				(mid 11.3211 -3.0661)
-				(end 9.525 -3.81)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 9.525 -3.81) (xy -9.525 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 12.065 -1.27) (xy 12.065 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 12.7 0) (xy 3.81 0)
 				)
 				(stroke
@@ -426,11 +330,107 @@
 		(symbol "IV-22_VFD_Tube_1_1"
 			(polyline
 				(pts
+					(xy -12.065 1.27) (xy -12.065 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -12.065 1.27)
+				(mid -11.3211 3.0661)
+				(end -9.525 3.81)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -9.525 -3.81)
+				(mid -11.3211 -3.0661)
+				(end -12.065 -1.27)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
 					(xy -3.175 0) (xy 3.175 0)
 				)
 				(stroke
 					(width 0)
 					(type dash)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.525 3.81) (xy -9.525 3.81)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 9.525 3.81)
+				(mid 11.3211 3.0661)
+				(end 12.065 1.27)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 12.065 -1.27)
+				(mid 11.3211 -3.0661)
+				(end 9.525 -3.81)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.525 -3.81) (xy -9.525 -3.81)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 12.065 -1.27) (xy 12.065 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
 				)
 				(fill
 					(type none)
