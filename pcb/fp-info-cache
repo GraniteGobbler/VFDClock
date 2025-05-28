@@ -1,4 +1,4 @@
-24740850478592567
+24744347418412153
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -98741,6 +98741,20 @@ PL31-A_P_Socket
 0
 12
 12
+VFDClock_custom_lib
+VEML3235SL_Horizontal
+
+
+0
+4
+4
+VFDClock_custom_lib
+VEML3235SL_Vertical
+
+
+0
+4
+4
 Vacuum_Tubes
 PL31-A_P_Socket
 
