@@ -1,4 +1,4 @@
-24744347418412153
+24746096414711183
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -98734,6 +98734,13 @@ CONV_RS3K-0524S_H3
 0
 7
 7
+VFDClock_custom_lib
+CUI_UJ20-C-V-C-2-SMT-TR
+
+
+0
+40
+17
 VFDClock_custom_lib
 PL31-A_P_Socket
 

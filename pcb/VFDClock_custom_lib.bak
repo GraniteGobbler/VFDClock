@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Vacuum_Tubes:PL31-A_P_Socket"
+		(property "Footprint" "VFDClock_custom_lib:PL31-A_P_Socket"
 			(at 0 -12.192 0)
 			(effects
 				(font
@@ -441,25 +441,6 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-				)
-			)
-			(pin input line
-				(at -14.605 -0.635 0)
-				(length 2.54)
-				(hide yes)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
 					)
 				)
 			)
@@ -5318,14 +5299,14 @@
 			(pin input line
 				(at -7.62 2.54 0)
 				(length 2.54)
-				(name "SDA"
+				(name "SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5336,14 +5317,14 @@
 			(pin input line
 				(at -7.62 -2.54 0)
 				(length 2.54)
-				(name "SCL"
+				(name "SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "4"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
