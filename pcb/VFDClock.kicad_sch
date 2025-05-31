@@ -13741,7 +13741,7 @@
 	)
 	(text "TEMP SENS"
 		(exclude_from_sim no)
-		(at 53.34 71.12 0)
+		(at 39.37 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14224,7 +14224,7 @@
 	)
 	(text "LIGHT SENS"
 		(exclude_from_sim no)
-		(at 67.818 71.12 0)
+		(at 53.848 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14532,16 +14532,6 @@
 		)
 		(uuid "f6dfeeef-7906-4b21-97e6-e680fbf9a7d7")
 	)
-	(text "RTC"
-		(exclude_from_sim no)
-		(at 38.1 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "fc0d8f3b-a862-4817-b48c-189521842c11")
-	)
 	(text_box "Features:\n\n24 and 12 hour format, with blinking colon and am/pm indicator\n\nRTC + Battery\n\nRoom temperature and humidity display\n\nLight sensor and automatic dimming of the tubes and LEDs depending on the light in the room\n\nFour buttons which can control the following:\n\n- set the time\n\n- switch modes (12hour, 24hour, temperature & humidity periodically, temperature & humidity only)\n\nOvervoltage protection\n\nOvercurrent protection\n\nESD protection\n\nhttps://www.hackster.io/deathorion/homemade-iv-22-vfd-clock-9f39a0#toc-features-2"
 		(exclude_from_sim no)
 		(at 105.41 16.51 0)
@@ -14563,7 +14553,7 @@
 		(uuid "5c5e52c6-3055-4b8f-93e6-5c75f1e731ab")
 	)
 	(junction
-		(at 57.15 72.39)
+		(at 43.18 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "003e1bee-5947-4f40-919d-1e313131250a")
@@ -14573,12 +14563,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "00c6696c-b72c-427c-bba1-20ad38c74066")
-	)
-	(junction
-		(at 34.29 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "01470b2d-1bd2-437d-b93f-7f34c1bcba5c")
 	)
 	(junction
 		(at 31.75 201.93)
@@ -14597,6 +14581,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1243bf77-c157-4bc1-844d-0344fb1bdb05")
+	)
+	(junction
+		(at 35.56 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "146f98e1-db13-4838-b89a-b9f8885b6c8e")
 	)
 	(junction
 		(at 236.22 219.71)
@@ -14671,7 +14661,7 @@
 		(uuid "3e8d896f-e0c0-4415-b9ad-391255e94841")
 	)
 	(junction
-		(at 64.77 72.39)
+		(at 50.8 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49b8c1d8-4458-47a4-be99-0bdd1561cb08")
@@ -14743,12 +14733,6 @@
 		(uuid "607ecf1e-56f5-4446-a85e-6dc696234823")
 	)
 	(junction
-		(at 26.67 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66a19c8f-2914-4ca1-91c4-0d61dc128272")
-	)
-	(junction
 		(at 313.69 191.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14765,12 +14749,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7263ec92-a4b0-4605-b018-2d41f8d13ee9")
-	)
-	(junction
-		(at 41.91 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "736d559b-59b7-4745-a168-fe9e3abeba69")
 	)
 	(junction
 		(at 379.73 106.68)
@@ -14797,22 +14775,10 @@
 		(uuid "7f7e2742-8988-4750-b160-83394c88148f")
 	)
 	(junction
-		(at 91.44 229.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "80538d55-0484-478f-b97b-40232a8ec46d")
-	)
-	(junction
 		(at 102.87 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "80c3bc97-ea20-444c-9adc-deef4147cbbe")
-	)
-	(junction
-		(at 91.44 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "833bf007-8990-4b2c-8ddd-2d90559e6a02")
 	)
 	(junction
 		(at 168.91 147.32)
@@ -14831,6 +14797,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8dc24e2a-3b94-4423-8821-5ba4cd04a6da")
+	)
+	(junction
+		(at 26.67 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91926ac9-e286-4958-ab77-ddfa7bad37b9")
 	)
 	(junction
 		(at 368.3 172.72)
@@ -14951,12 +14923,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ccddaaf0-e043-4efe-b552-7795f9c62090")
-	)
-	(junction
-		(at 49.53 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d20e537f-2ed6-43a6-86a4-b77e3d0b10a4")
 	)
 	(junction
 		(at 261.62 123.19)
@@ -15212,7 +15178,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 82.55) (xy 58.42 82.55)
+			(xy 43.18 82.55) (xy 44.45 82.55)
 		)
 		(stroke
 			(width 0)
@@ -15229,16 +15195,6 @@
 			(type default)
 		)
 		(uuid "026756f7-7adf-4b57-b1da-04a1c1690d2f")
-	)
-	(wire
-		(pts
-			(xy 149.86 96.52) (xy 161.29 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "027dd9e0-f778-468a-9336-e1bacacd7742")
 	)
 	(wire
 		(pts
@@ -15382,7 +15338,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 82.55) (xy 73.66 82.55)
+			(xy 58.42 82.55) (xy 59.69 82.55)
 		)
 		(stroke
 			(width 0)
@@ -15472,7 +15428,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 238.76) (xy 91.44 240.03)
+			(xy 91.44 238.76) (xy 91.44 241.3)
 		)
 		(stroke
 			(width 0)
@@ -15522,7 +15478,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 229.87) (xy 91.44 231.14)
+			(xy 91.44 228.6) (xy 91.44 231.14)
 		)
 		(stroke
 			(width 0)
@@ -15742,7 +15698,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 72.39) (xy 72.39 73.66)
+			(xy 58.42 72.39) (xy 58.42 73.66)
 		)
 		(stroke
 			(width 0)
@@ -15789,16 +15745,6 @@
 			(type default)
 		)
 		(uuid "1b8430ac-9ee4-421a-a3d0-586661f806c9")
-	)
-	(wire
-		(pts
-			(xy 34.29 82.55) (xy 35.56 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bb1752b-35f0-4f85-a9b8-7822fb9473c5")
 	)
 	(wire
 		(pts
@@ -15872,16 +15818,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 104.14) (xy 118.11 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f6b1132-e6bc-4d36-8fb0-a5b780a01fa8")
-	)
-	(wire
-		(pts
 			(xy 335.28 187.96) (xy 336.55 187.96)
 		)
 		(stroke
@@ -15919,16 +15855,6 @@
 			(type default)
 		)
 		(uuid "21ee2daa-d417-4f52-a808-25edd799f929")
-	)
-	(wire
-		(pts
-			(xy 34.29 72.39) (xy 34.29 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21f56885-56c2-4504-a9e5-f851cc7f250e")
 	)
 	(wire
 		(pts
@@ -16415,16 +16341,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 228.6) (xy 91.44 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b10e601-eb0d-4276-b7ae-0f60077bc43f")
-	)
-	(wire
-		(pts
 			(xy 21.59 231.14) (xy 21.59 232.41)
 		)
 		(stroke
@@ -16442,16 +16358,6 @@
 			(type default)
 		)
 		(uuid "3ca57db4-9176-420c-adf0-394e9feb637b")
-	)
-	(wire
-		(pts
-			(xy 85.09 240.03) (xy 91.44 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3cb7cd5f-7944-4033-868c-09fc609b82e8")
 	)
 	(wire
 		(pts
@@ -16555,16 +16461,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 121.92) (xy 119.38 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41874c16-687b-43aa-ad16-d87954423cf7")
-	)
-	(wire
-		(pts
 			(xy 115.57 138.43) (xy 115.57 137.16)
 		)
 		(stroke
@@ -16605,7 +16501,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 82.55) (xy 50.8 82.55)
+			(xy 35.56 82.55) (xy 36.83 82.55)
 		)
 		(stroke
 			(width 0)
@@ -16938,16 +16834,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 229.87) (xy 91.44 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55a5797c-d0d5-487b-a0d6-6582658b7634")
-	)
-	(wire
-		(pts
 			(xy 60.96 236.22) (xy 55.88 236.22)
 		)
 		(stroke
@@ -16985,6 +16871,16 @@
 			(type default)
 		)
 		(uuid "59034d74-5fa7-471c-9d49-2656c6ffac8b")
+	)
+	(wire
+		(pts
+			(xy 149.86 96.52) (xy 161.29 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5969ada4-1e56-422b-b132-b7280f09e7b9")
 	)
 	(polyline
 		(pts
@@ -17068,7 +16964,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 72.39) (xy 49.53 73.66)
+			(xy 35.56 72.39) (xy 35.56 73.66)
 		)
 		(stroke
 			(width 0)
@@ -17339,6 +17235,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 99.06) (xy 161.29 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a21a619-b9d8-4ad0-a874-0ce8a8a98db8")
+	)
+	(wire
+		(pts
 			(xy 21.59 201.93) (xy 21.59 203.2)
 		)
 		(stroke
@@ -17517,6 +17423,16 @@
 			(type default)
 		)
 		(uuid "7245c4e0-d81a-4c08-b011-47c772155eec")
+	)
+	(wire
+		(pts
+			(xy 118.11 124.46) (xy 119.38 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72d679c1-372c-498f-8eb2-05c237515d0f")
 	)
 	(wire
 		(pts
@@ -17790,16 +17706,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 124.46) (xy 119.38 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "806d7d4e-1359-4ed4-8415-28fa0db20308")
-	)
-	(wire
-		(pts
 			(xy 288.29 82.55) (xy 289.56 82.55)
 		)
 		(stroke
@@ -18020,6 +17926,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 121.92) (xy 118.11 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8961ba09-777d-4541-9a40-d219d679c2db")
+	)
+	(wire
+		(pts
 			(xy 240.03 101.6) (xy 240.03 100.33)
 		)
 		(stroke
@@ -18070,7 +17986,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 72.39) (xy 64.77 73.66)
+			(xy 50.8 72.39) (xy 50.8 73.66)
 		)
 		(stroke
 			(width 0)
@@ -18157,16 +18073,6 @@
 			(type default)
 		)
 		(uuid "8f4cf041-ff4a-4f5d-a42d-c5de19ada42d")
-	)
-	(wire
-		(pts
-			(xy 149.86 99.06) (xy 161.29 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f6b6aba-863a-4374-a306-6d769de882b1")
 	)
 	(wire
 		(pts
@@ -18269,16 +18175,6 @@
 		)
 		(uuid "91875ac3-c864-4222-aa7c-81e7faacce51")
 	)
-	(wire
-		(pts
-			(xy 41.91 81.28) (xy 41.91 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "918e3780-56b8-4b25-b637-db750d1b96e0")
-	)
 	(polyline
 		(pts
 			(xy 43.18 38.1) (xy 46.355 38.1)
@@ -18349,16 +18245,6 @@
 			(type default)
 		)
 		(uuid "94992e75-711d-4e2d-b504-b5603e0a4c20")
-	)
-	(wire
-		(pts
-			(xy 41.91 72.39) (xy 49.53 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94baa8ad-27b5-4841-b523-40b5f90755d6")
 	)
 	(wire
 		(pts
@@ -18452,7 +18338,17 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 81.28) (xy 49.53 82.55)
+			(xy 26.67 72.39) (xy 35.56 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "978abe06-5286-4b41-91d6-d49fc4833827")
+	)
+	(wire
+		(pts
+			(xy 35.56 81.28) (xy 35.56 82.55)
 		)
 		(stroke
 			(width 0)
@@ -18519,16 +18415,6 @@
 			(type default)
 		)
 		(uuid "99b940f9-7f24-4937-abc9-d2c2470abc0c")
-	)
-	(wire
-		(pts
-			(xy 41.91 82.55) (xy 43.18 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99cd0c4a-d786-4ded-ba54-6e5cd6464ee3")
 	)
 	(wire
 		(pts
@@ -18632,6 +18518,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 104.14) (xy 119.38 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d5de5f3-8a8f-4aed-8947-ebb4aa47b543")
+	)
+	(wire
+		(pts
 			(xy 368.3 21.59) (xy 368.3 22.86)
 		)
 		(stroke
@@ -18639,16 +18535,6 @@
 			(type default)
 		)
 		(uuid "9da01cfb-f213-4058-8d04-c45a96ed58fc")
-	)
-	(wire
-		(pts
-			(xy 26.67 72.39) (xy 34.29 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9db7c8f0-2fe2-4841-8d74-ca6f139354b6")
 	)
 	(polyline
 		(pts
@@ -18942,7 +18828,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 81.28) (xy 72.39 82.55)
+			(xy 58.42 81.28) (xy 58.42 82.55)
 		)
 		(stroke
 			(width 0)
@@ -18969,16 +18855,6 @@
 			(type default)
 		)
 		(uuid "ac7b9e71-ced2-4898-b46f-e270535cefb6")
-	)
-	(wire
-		(pts
-			(xy 85.09 238.76) (xy 85.09 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac8e405a-6fb4-4599-96b0-bb512d51306d")
 	)
 	(polyline
 		(pts
@@ -19200,16 +19076,6 @@
 		)
 		(uuid "b47494d9-e0e3-4972-b377-0f21c1be492d")
 	)
-	(wire
-		(pts
-			(xy 91.44 240.03) (xy 91.44 241.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b55224b9-b057-4244-b0fa-73096f2ac595")
-	)
 	(polyline
 		(pts
 			(xy 72.39 46.99) (xy 75.565 46.99)
@@ -19250,36 +19116,6 @@
 			(type default)
 		)
 		(uuid "b9ed0c9e-163a-48bb-b56b-4eb48343ab1e")
-	)
-	(wire
-		(pts
-			(xy 85.09 231.14) (xy 85.09 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb5a65c9-e39b-4cb5-8940-e3012639b6fa")
-	)
-	(wire
-		(pts
-			(xy 41.91 72.39) (xy 41.91 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc1210a7-8128-4cc9-b293-1d207925b2ff")
-	)
-	(wire
-		(pts
-			(xy 34.29 81.28) (xy 34.29 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd71e682-cbd0-4258-9d38-1f34a31e6b09")
 	)
 	(wire
 		(pts
@@ -19514,7 +19350,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 72.39) (xy 72.39 72.39)
+			(xy 50.8 72.39) (xy 58.42 72.39)
 		)
 		(stroke
 			(width 0)
@@ -19614,7 +19450,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 72.39) (xy 57.15 72.39)
+			(xy 35.56 72.39) (xy 43.18 72.39)
 		)
 		(stroke
 			(width 0)
@@ -19956,7 +19792,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 72.39) (xy 57.15 73.66)
+			(xy 43.18 72.39) (xy 43.18 73.66)
 		)
 		(stroke
 			(width 0)
@@ -20026,7 +19862,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 72.39) (xy 64.77 72.39)
+			(xy 43.18 72.39) (xy 50.8 72.39)
 		)
 		(stroke
 			(width 0)
@@ -20196,7 +20032,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 82.55) (xy 66.04 82.55)
+			(xy 50.8 82.55) (xy 52.07 82.55)
 		)
 		(stroke
 			(width 0)
@@ -20236,7 +20072,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 81.28) (xy 64.77 82.55)
+			(xy 50.8 81.28) (xy 50.8 82.55)
 		)
 		(stroke
 			(width 0)
@@ -20666,7 +20502,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 81.28) (xy 57.15 82.55)
+			(xy 43.18 81.28) (xy 43.18 82.55)
 		)
 		(stroke
 			(width 0)
@@ -20793,16 +20629,6 @@
 			(type default)
 		)
 		(uuid "fdc803ab-8337-4102-8cd1-2c6117437172")
-	)
-	(wire
-		(pts
-			(xy 34.29 72.39) (xy 41.91 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff8baa1e-54b3-4d27-a9a1-a39edaaf308d")
 	)
 	(wire
 		(pts
@@ -29041,6 +28867,24 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
 		)
 	)
@@ -29063,16 +28907,6 @@
 			(justify left bottom)
 		)
 		(uuid "0582d6df-f947-49fd-a5ea-6d0e570fcac8")
-	)
-	(label "{slash}SRCLR"
-		(at 151.13 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "05a0a253-203b-49e2-999c-750a48f74da0")
 	)
 	(label "GRID_R2"
 		(at 353.06 109.22 180)
@@ -29105,7 +28939,7 @@
 		(uuid "13c591a0-cd84-48b7-b13c-4041d6d2f8ff")
 	)
 	(label "SCL"
-		(at 66.04 82.55 0)
+		(at 52.07 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -29165,7 +28999,7 @@
 		(uuid "1e7d480e-769d-4cdf-a785-de1ffe047ee1")
 	)
 	(label "SDA"
-		(at 73.66 82.55 0)
+		(at 59.69 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -29175,7 +29009,7 @@
 		(uuid "1f4c4136-e905-445c-a570-3abdf961c487")
 	)
 	(label "SDA"
-		(at 58.42 82.55 0)
+		(at 44.45 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -29254,16 +29088,6 @@
 		)
 		(uuid "356efddd-2391-45d9-b819-3e92e544e7d9")
 	)
-	(label "GPIO16"
-		(at 118.11 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "37a3c0d4-b69d-47d4-b982-f4f1c54aff46")
-	)
 	(label "SDA"
 		(at 335.28 180.34 180)
 		(effects
@@ -29284,16 +29108,6 @@
 		)
 		(uuid "3ee4c46c-54bd-4214-ab2c-04be25e9ae8a")
 	)
-	(label "BTN4"
-		(at 118.11 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "416f3307-e87e-4907-bf51-6d2171db8900")
-	)
 	(label "{slash}SRCLR"
 		(at 368.3 109.22 0)
 		(effects
@@ -29313,16 +29127,6 @@
 			(justify right bottom)
 		)
 		(uuid "47ee62a9-9001-4bfa-86a1-ead27e059103")
-	)
-	(label "Uphoto"
-		(at 118.11 121.92 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "487a9edb-6fb8-462d-9bd9-df9c621f9625")
 	)
 	(label "BTN4"
 		(at 185.42 222.25 0)
@@ -29364,6 +29168,16 @@
 		)
 		(uuid "4d471e64-6714-4b09-8c73-8a8f4e6f0863")
 	)
+	(label "BTN4"
+		(at 118.11 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "53d47f14-709c-4001-bb6a-5922fdf82689")
+	)
 	(label "DRIVER_R2"
 		(at 228.6 77.47 180)
 		(effects
@@ -29383,6 +29197,16 @@
 			(justify left bottom)
 		)
 		(uuid "55916910-e1fe-4162-8f94-eabd2dab5c4c")
+	)
+	(label "{slash}SRCLR"
+		(at 151.13 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "570d7737-c571-4b69-89d5-04b4e9054b1b")
 	)
 	(label "SCL"
 		(at 151.13 83.82 0)
@@ -29503,6 +29327,26 @@
 			(justify right bottom)
 		)
 		(uuid "758f7820-2471-44e8-94be-e5081abfd6e3")
+	)
+	(label "Uphoto"
+		(at 118.11 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "76d68a6b-5ef1-4939-bb53-f0f5289d24ab")
+	)
+	(label "GPIO8"
+		(at 118.11 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7a57258e-5083-4b3d-8295-2bec797f29e2")
 	)
 	(label "GPIO40"
 		(at 151.13 109.22 0)
@@ -29785,7 +29629,7 @@
 		(uuid "da1b0dec-bb1e-4216-8beb-f1ee38e19bd4")
 	)
 	(label "SCL"
-		(at 50.8 82.55 0)
+		(at 36.83 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -29833,26 +29677,6 @@
 			(justify left bottom)
 		)
 		(uuid "dfb11019-766c-4f75-9b44-432ac1762bb4")
-	)
-	(label "SDA"
-		(at 43.18 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e21a7c89-0354-4f10-9148-c130b956a891")
-	)
-	(label "SRCLK"
-		(at 151.13 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e5e7ceec-4258-433a-9983-656b8ac85ed3")
 	)
 	(label "LED2"
 		(at 118.11 88.9 180)
@@ -29924,7 +29748,7 @@
 		)
 		(uuid "f1ae9c48-505b-436d-abb8-2fb741c3f4ae")
 	)
-	(label "GPIO16"
+	(label "GPIO8"
 		(at 153.67 139.7 180)
 		(effects
 			(font
@@ -29933,16 +29757,6 @@
 			(justify right bottom)
 		)
 		(uuid "f25f0f06-1d06-4911-ba28-530a58feb056")
-	)
-	(label "SCL"
-		(at 35.56 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f2ddea2d-c26b-4017-886a-85d75cd63870")
 	)
 	(label "GPIO40"
 		(at 153.67 144.78 180)
@@ -29963,6 +29777,16 @@
 			(justify left bottom)
 		)
 		(uuid "f9c71b28-fc83-4fc0-a14a-2b1ad480c251")
+	)
+	(label "SRCLK"
+		(at 151.13 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc816335-bf87-4e72-8ce7-29520bd610eb")
 	)
 	(label "GPIO39"
 		(at 153.67 142.24 180)
@@ -30238,7 +30062,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "01ffefbe-6554-4a76-b345-a0fb9c05cc3a")
-		(property "Reference" "R17"
+		(property "Reference" "R15"
 			(at 224.79 213.3599 0)
 			(effects
 				(font
@@ -30292,7 +30116,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R17")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -30648,7 +30472,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "09b18d36-0bbc-42ec-9947-5886b41fd330")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR083"
 			(at 67.31 233.68 0)
 			(effects
 				(font
@@ -30698,7 +30522,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#PWR082")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -31236,7 +31060,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "109881d7-6a48-46b7-82e0-083ad24ebad4")
-		(property "Reference" "C20"
+		(property "Reference" "C21"
 			(at 50.8 234.0609 0)
 			(effects
 				(font
@@ -31290,7 +31114,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "C20")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -31783,7 +31607,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2011d46c-dff7-4702-be1f-8ed076cc400a")
-		(property "Reference" "R18"
+		(property "Reference" "R16"
 			(at 238.76 213.3599 0)
 			(effects
 				(font
@@ -31837,7 +31661,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R18")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -31947,7 +31771,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "229dcb09-3c22-415e-8497-51c16fc07421")
-		(property "Reference" "R21"
+		(property "Reference" "R19"
 			(at 186.69 215.8999 0)
 			(effects
 				(font
@@ -32001,7 +31825,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R21")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -32009,15 +31833,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 64.77 77.47 0)
+		(at 50.8 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
 		(uuid "2304c35a-febb-4eb2-90aa-c1973385093c")
-		(property "Reference" "R7"
-			(at 67.31 76.1999 0)
+		(property "Reference" "R5"
+			(at 53.34 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32026,7 +31850,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 67.31 78.7399 0)
+			(at 53.34 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32035,7 +31859,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 62.992 77.47 90)
+			(at 49.022 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32044,7 +31868,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 64.77 77.47 0)
+			(at 50.8 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32053,7 +31877,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 64.77 77.47 0)
+			(at 50.8 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32070,7 +31894,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R7")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -32707,7 +32531,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 208.28 173.99 0)
 			(effects
 				(font
@@ -33113,7 +32937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3058e328-e51c-4db1-9ec8-906e0e499abc")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR05"
 			(at 327.66 29.21 0)
 			(effects
 				(font
@@ -33163,7 +32987,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#PWR01")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -33383,7 +33207,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "368c41f7-e8c6-42ae-b5f5-ba42df65a0ef")
-		(property "Reference" "R13"
+		(property "Reference" "R11"
 			(at 158.75 173.9899 0)
 			(effects
 				(font
@@ -33437,7 +33261,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R13")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -33940,7 +33764,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "42afc0a9-b10c-46d0-b522-68f106650b8b")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR06"
 			(at 336.55 26.67 0)
 			(effects
 				(font
@@ -33990,7 +33814,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#PWR03")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -34773,7 +34597,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b34ce5d-607b-48cb-8269-bda401274390")
-		(property "Reference" "R9"
+		(property "Reference" "R7"
 			(at 64.77 90.17 90)
 			(effects
 				(font
@@ -34825,7 +34649,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R9")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -35380,7 +35204,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b47d199-995c-4820-8c99-9af8f98b77b4")
-		(property "Reference" "R16"
+		(property "Reference" "R14"
 			(at 226.06 181.6099 0)
 			(effects
 				(font
@@ -35434,7 +35258,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R16")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -35976,7 +35800,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "79290dc6-4240-4337-9c80-27ce3956790b")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR080"
 			(at 91.44 232.41 0)
 			(effects
 				(font
@@ -36026,7 +35850,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#PWR083")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -36112,7 +35936,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b495ad7-353e-416e-8d87-d67f46713063")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR02"
 			(at 368.3 24.13 0)
 			(effects
 				(font
@@ -36162,7 +35986,7 @@
 		(instances
 			(project ""
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#PWR05")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -36910,7 +36734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92d80a85-c529-4275-a8ff-c127d85389d4")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR01"
 			(at 356.87 24.13 0)
 			(effects
 				(font
@@ -36960,7 +36784,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#PWR04")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -37042,7 +36866,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "938df376-8f17-4c11-80b5-27de8428abfa")
-		(property "Reference" "R10"
+		(property "Reference" "R8"
 			(at 73.66 92.71 90)
 			(effects
 				(font
@@ -37094,7 +36918,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R10")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -37242,7 +37066,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9680c328-dbe9-4750-ab21-51bcefe4201a")
-		(property "Reference" "R19"
+		(property "Reference" "R17"
 			(at 391.16 213.3599 0)
 			(effects
 				(font
@@ -37297,7 +37121,7 @@
 		(instances
 			(project ""
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R19")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -37313,7 +37137,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97214d39-b5c8-444e-9431-71c72b7b66ba")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR03"
 			(at 381 24.13 0)
 			(effects
 				(font
@@ -37363,7 +37187,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#PWR06")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -37379,7 +37203,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97766ea9-2bd5-45bc-b07f-611e02a1c1bf")
-		(property "Reference" "R11"
+		(property "Reference" "R9"
 			(at 105.41 130.8099 0)
 			(effects
 				(font
@@ -37433,7 +37257,7 @@
 		(instances
 			(project ""
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R11")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -37518,7 +37342,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98488671-1e87-40ba-b91c-547286de832c")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG02"
 			(at 336.55 24.765 0)
 			(effects
 				(font
@@ -37568,7 +37392,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#FLG03")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -37583,7 +37407,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "98da4c5e-fcdc-4b48-9f3c-ee57796ec7e4")
-		(property "Reference" "R20"
+		(property "Reference" "R18"
 			(at 158.75 215.8999 0)
 			(effects
 				(font
@@ -37637,7 +37461,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R20")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -38197,7 +38021,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2e44deb-10e5-4abe-865e-531a04387044")
-		(property "Reference" "R15"
+		(property "Reference" "R13"
 			(at 210.82 181.6099 0)
 			(effects
 				(font
@@ -38251,7 +38075,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R15")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -38473,7 +38297,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a87b33d4-bc72-4d9e-904e-200373d93050")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR081"
 			(at 21.59 233.68 0)
 			(effects
 				(font
@@ -38523,7 +38347,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#PWR080")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -38539,7 +38363,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac614909-715b-45e3-a49c-9f5edfcc9cd2")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR07"
 			(at 346.71 26.67 0)
 			(effects
 				(font
@@ -38589,7 +38413,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#PWR02")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -39460,7 +39284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb80c8dd-bc0f-4d77-ac96-f92879320938")
-		(property "Reference" "R12"
+		(property "Reference" "R10"
 			(at 76.2 133.3499 0)
 			(effects
 				(font
@@ -39514,7 +39338,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R12")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -39793,7 +39617,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c256d9ef-a259-4e51-90a0-f6029b664873")
-		(property "Reference" "R14"
+		(property "Reference" "R12"
 			(at 186.69 173.9899 0)
 			(effects
 				(font
@@ -39847,7 +39671,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R14")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -40336,15 +40160,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 57.15 77.47 0)
+		(at 43.18 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
 		(uuid "cca0aa2e-ec20-4d2a-8882-95c28ab11436")
-		(property "Reference" "R6"
-			(at 59.69 76.1999 0)
+		(property "Reference" "R4"
+			(at 45.72 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40353,7 +40177,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 59.69 78.7399 0)
+			(at 45.72 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40362,7 +40186,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 55.372 77.47 90)
+			(at 41.402 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40371,7 +40195,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 77.47 0)
+			(at 43.18 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40380,7 +40204,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 57.15 77.47 0)
+			(at 43.18 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40397,7 +40221,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R6")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -40545,7 +40369,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d0304c70-cba2-426f-83cb-e96836155603")
-		(property "Reference" "R22"
+		(property "Reference" "R20"
 			(at 391.16 223.5199 0)
 			(effects
 				(font
@@ -40599,7 +40423,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R22")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -40615,7 +40439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d031122d-18b1-4dce-be3f-092c15c2755f")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG03"
 			(at 346.71 24.765 0)
 			(effects
 				(font
@@ -40665,7 +40489,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#FLG02")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -40745,75 +40569,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 85.09 234.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d2c25130-97c2-44ba-bd76-1631c9b08e0c")
-		(property "Reference" "C21"
-			(at 80.772 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22u"
-			(at 80.772 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H"
-			(at 86.0552 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 85.09 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 85.09 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6a2648f7-e698-4c0c-b156-2b1134d78e6a")
-		)
-		(pin "2"
-			(uuid "164b4cbd-e7bc-403f-9864-8068ecd3c206")
-		)
-		(instances
-			(project "VFDClock"
-				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+1V5")
 		(at 46.99 229.87 0)
 		(unit 1)
@@ -40823,7 +40578,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d35258fe-0754-4508-af79-414b1200eda1")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR082"
 			(at 46.99 233.68 0)
 			(effects
 				(font
@@ -40873,7 +40628,7 @@
 		(instances
 			(project ""
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#PWR081")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -40964,7 +40719,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d46a976c-9580-42be-b8cd-1a88c96ca809")
-		(property "Reference" "C19"
+		(property "Reference" "C20"
 			(at 25.4 234.0609 0)
 			(effects
 				(font
@@ -41018,7 +40773,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "C19")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -42121,75 +41876,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 34.29 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "e4d3e4ed-ebc7-4cee-bb88-57493fd92ec5")
-		(property "Reference" "R3"
-			(at 36.83 76.1999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4k7"
-			(at 36.83 78.7399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 32.512 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 34.29 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 34.29 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a7a880f6-6f36-4ebc-9320-de8e3dc811fa")
-		)
-		(pin "2"
-			(uuid "d8faaa78-acb8-44ee-a73d-db670bdc57bd")
-		)
-		(instances
-			(project "VFDClock"
-				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 381 22.86 180)
 		(unit 1)
@@ -42256,15 +41942,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 49.53 77.47 0)
+		(at 35.56 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
 		(uuid "e7644bc6-c2bb-40f5-9b62-98caf9d39148")
-		(property "Reference" "R5"
-			(at 52.07 76.1999 0)
+		(property "Reference" "R3"
+			(at 38.1 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42273,7 +41959,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 52.07 78.7399 0)
+			(at 38.1 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42282,7 +41968,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 47.752 77.47 90)
+			(at 33.782 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42291,7 +41977,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 77.47 0)
+			(at 35.56 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42300,7 +41986,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 49.53 77.47 0)
+			(at 35.56 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42317,7 +42003,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R5")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -42397,7 +42083,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e802a0f5-df51-487b-9c8f-0909bd0d1756")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR04"
 			(at 392.43 24.13 0)
 			(effects
 				(font
@@ -42447,76 +42133,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 41.91 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "e881bbe3-ffa3-4455-b0d7-4c3d9c07e98e")
-		(property "Reference" "R4"
-			(at 44.45 76.1999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4k7"
-			(at 44.45 78.7399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 40.132 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d5979d36-796a-47ea-91f2-e7b63d576bf1")
-		)
-		(pin "2"
-			(uuid "d6443e43-6503-4d4e-8ce0-61c410482e55")
-		)
-		(instances
-			(project "VFDClock"
-				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R4")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -42866,7 +42483,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "VFDClock_custom_lib:VEML3235SL_Vertical"
+		(property "Footprint" "VFDClock_custom_lib:VEML3235SL_Horizontal"
 			(at 349.25 237.49 0)
 			(effects
 				(font
@@ -42916,15 +42533,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 72.39 77.47 0)
+		(at 58.42 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
 		(uuid "f2e5ca6e-f191-4489-9d90-8fa1bb10a2a8")
-		(property "Reference" "R8"
-			(at 74.93 76.1999 0)
+		(property "Reference" "R6"
+			(at 60.96 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42933,7 +42550,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 74.93 78.7399 0)
+			(at 60.96 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42942,7 +42559,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 70.612 77.47 90)
+			(at 56.642 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42951,7 +42568,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 72.39 77.47 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42960,7 +42577,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 72.39 77.47 0)
+			(at 58.42 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42977,7 +42594,7 @@
 		(instances
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "R8")
+					(reference "R6")
 					(unit 1)
 				)
 			)
