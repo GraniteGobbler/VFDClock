@@ -3932,7 +3932,7 @@
 				)
 			)
 		)
-		(property "Value" "L_COL_CONN"
+		(property "Value" "COL_CONN"
 			(at 152.4 119.38 0)
 			(effects
 				(font
@@ -3940,7 +3940,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_2x02_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_2x02_P2.00mm_Vertical"
 			(at 151.13 123.19 0)
 			(effects
 				(font
