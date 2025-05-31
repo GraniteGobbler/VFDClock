@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.4,
-          "height": 2.1,
-          "width": 2.1
+          "drill": 3.2,
+          "height": 3.2,
+          "width": 3.2
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -267,10 +267,6 @@
   "erc": {
     "erc_exclusions": [
       [
-        "no_connect_connected|584200|2070100|0d4e8db5-345c-41df-9ba0-a96952a0c62f|ed948e1c-4a34-4acc-90cd-6bf2873cd5bc|/34951e98-25fa-4bcc-a56f-5aa93e8633e9||",
-        ""
-      ],
-      [
         "pin_not_driven|2717800|1003300|ee624fb0-b36a-4490-8302-75c70cee867a|00000000-0000-0000-0000-000000000000|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|",
         ""
       ],
@@ -300,22 +296,6 @@
       ],
       [
         "pin_not_driven|2717800|977900|4badac77-c059-4fe2-9da9-4e76c6494ad3|00000000-0000-0000-0000-000000000000|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|",
-        ""
-      ],
-      [
-        "pin_to_pin|3467100|228600|82694a10-9784-45b5-8579-1dfedde20629|28c16d3c-09bc-416d-88f0-2a1a3010946e|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|/34951e98-25fa-4bcc-a56f-5aa93e8633e9",
-        ""
-      ],
-      [
-        "pin_to_pin|3568700|228600|5f756327-079e-4325-b8db-a8facc4a4848|6300d16c-33f4-4d8c-900b-a39fe860d4e5|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|/34951e98-25fa-4bcc-a56f-5aa93e8633e9",
-        ""
-      ],
-      [
-        "pin_to_pin|584200|2019300|aa2ad916-a551-4076-99dd-ded8c184da9a|9cc1c8a0-8081-44a6-ab96-586c81d58a89|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|/34951e98-25fa-4bcc-a56f-5aa93e8633e9",
-        ""
-      ],
-      [
-        "pin_to_pin|584200|2120900|ea32d055-5b74-48eb-a533-a8c78d2ab9a3|8086560e-1c77-46bb-ab27-6c59b5e599f1|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|/34951e98-25fa-4bcc-a56f-5aa93e8633e9|/34951e98-25fa-4bcc-a56f-5aa93e8633e9",
         ""
       ]
     ],
@@ -518,11 +498,11 @@
       "missing_unit": "warning",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
-      "no_connect_connected": "warning",
+      "no_connect_connected": "error",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "ignore",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -542,7 +522,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "VFDClock.kicad_pro",
+    "filename": "Separator.kicad_pro",
     "version": 3
   },
   "net_settings": {
