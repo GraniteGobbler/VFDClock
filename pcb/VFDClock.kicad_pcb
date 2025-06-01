@@ -19610,6 +19610,17 @@
 			(uuid "3fb758d8-a8ac-4a72-afad-6e17bd4b2e8f")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/Models/VEML3235SL.stp"
+			(offset
+				(xyz 0 0.9 0.75)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical"
 		(layer "B.Cu")
@@ -33691,6 +33702,30 @@
 				(thickness 0.15)
 			)
 			(justify mirror)
+		)
+	)
+	(gr_text "PCB3D_TL_main"
+		(at 107.2 77.9 0)
+		(layer "Dwgs.User")
+		(uuid "06f24fc2-c751-41fd-9cfe-f97bd213325b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "PCB3D_BR_main"
+		(at 190.8 134.6 0)
+		(layer "Dwgs.User")
+		(uuid "53bb84c4-c468-42ba-88eb-a8081d55776e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
 		)
 	)
 	(segment
