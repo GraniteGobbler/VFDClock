@@ -1647,16 +1647,8 @@
 		(uuid "a68ff717-4f94-42d7-b11f-c6e566fba4d8")
 	)
 	(no_connect
-		(at 224.79 22.86)
-		(uuid "70678ed7-df81-4b64-8565-d2a0be762290")
-	)
-	(no_connect
 		(at 185.42 96.52)
 		(uuid "b60cb186-c309-47dd-be6b-295e206795c4")
-	)
-	(no_connect
-		(at 224.79 30.48)
-		(uuid "c9e36f51-7b52-40a5-b011-ecaff53be8a8")
 	)
 	(wire
 		(pts
@@ -2581,6 +2573,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 224.79 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28b5a172-8ed4-4a3c-b998-6ecb9a0635fc")
+		(property "Reference" "#PWR016"
+			(at 224.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 224.79 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e52a9d58-c9f9-4e32-b809-579c002bc304")
+		)
+		(instances
+			(project "Separator"
+				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 251.46 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2980,7 +3038,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 224.79 27.94 0)
+		(at 224.79 33.02 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -2989,7 +3047,7 @@
 		(fields_autoplaced yes)
 		(uuid "850baff0-0597-4996-a0ca-c38651df6edc")
 		(property "Reference" "H2"
-			(at 227.33 25.3999 0)
+			(at 227.33 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2998,7 +3056,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 227.33 27.9399 0)
+			(at 227.33 33.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3007,7 +3065,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
-			(at 224.79 27.94 0)
+			(at 224.79 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3016,7 +3074,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 224.79 27.94 0)
+			(at 224.79 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3025,7 +3083,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 224.79 27.94 0)
+			(at 224.79 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3909,6 +3967,72 @@
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 224.79 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db76bce4-b560-4b1a-a10b-e24491ae1080")
+		(property "Reference" "#PWR015"
+			(at 224.79 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 224.79 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df7067c6-f577-4227-a544-5908fd59ef36")
+		)
+		(instances
+			(project "Separator"
+				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)

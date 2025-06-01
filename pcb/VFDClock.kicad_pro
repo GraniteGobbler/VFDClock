@@ -63,7 +63,36 @@
           "width": 0.3
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|134630000|88480000|3ee3fa5c-37e5-42b9-bbc1-623ff2170b03|00000000-0000-0000-0000-000000000000",
+          "Edited footprint to match 0.15 mm clearance"
+        ],
+        [
+          "lib_footprint_mismatch|134630000|92280000|ab981e88-1cfc-4e9f-af52-32df156314b7|00000000-0000-0000-0000-000000000000",
+          "Edited footprint to match 0.15 mm clearance"
+        ],
+        [
+          "lib_footprint_mismatch|148790000|125055000|e3a9cb9b-73fe-4643-9f0a-7e78f8b87625|00000000-0000-0000-0000-000000000000",
+          "Replaced with a more suitable connector"
+        ],
+        [
+          "lib_footprint_mismatch|148790000|130055000|6d5fb141-0335-4532-95ca-086cb3ebd353|00000000-0000-0000-0000-000000000000",
+          "Replaced with a more suitable connector"
+        ],
+        [
+          "lib_footprint_mismatch|148930000|93305000|57e00847-f56e-4ed0-8dd0-fbc91eebeee9|00000000-0000-0000-0000-000000000000",
+          "Custom keep-out zone"
+        ],
+        [
+          "lib_footprint_mismatch|164217500|102600000|53167444-92b7-46e5-8799-f69e0cbe2f46|00000000-0000-0000-0000-000000000000",
+          "Replaced pads with PTH"
+        ],
+        [
+          "lib_footprint_mismatch|175900000|112100000|7902010d-726d-42cf-b6c1-af35317c254a|00000000-0000-0000-0000-000000000000",
+          "Custom inductor"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -105,7 +134,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "error",
         "shorting_items": "error",
-        "silk_edge_clearance": "error",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "error",
         "silk_overlap": "error",
         "skew_out_of_range": "error",
@@ -143,7 +172,7 @@
         "min_track_width": 0.127,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.6,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -250,11 +279,6 @@
         "bottomLayer": 2,
         "enabled": true,
         "topLayer": 0
-      },
-      {
-        "bottomLayer": 6,
-        "enabled": true,
-        "topLayer": 4
       }
     ],
     "layer_presets": [],
@@ -549,7 +573,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.25,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.25,
@@ -566,7 +590,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.15,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,

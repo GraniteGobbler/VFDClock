@@ -4156,6 +4156,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Power_Protection:IP4234CZ6"
 			(pin_names
 				(offset 0)
@@ -14749,7 +14856,7 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 109.22) (xy 368.3 109.22)
+			(xy 367.03 86.36) (xy 368.3 86.36)
 		)
 		(stroke
 			(width 0)
@@ -15409,7 +15516,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 106.68) (xy 354.33 106.68)
+			(xy 353.06 83.82) (xy 354.33 83.82)
 		)
 		(stroke
 			(width 0)
@@ -15660,7 +15767,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 83.82) (xy 367.03 83.82)
+			(xy 368.3 106.68) (xy 367.03 106.68)
 		)
 		(stroke
 			(width 0)
@@ -16757,7 +16864,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 88.9) (xy 367.03 88.9)
+			(xy 368.3 111.76) (xy 367.03 111.76)
 		)
 		(stroke
 			(width 0)
@@ -16827,7 +16934,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 111.76) (xy 353.06 111.76)
+			(xy 354.33 88.9) (xy 353.06 88.9)
 		)
 		(stroke
 			(width 0)
@@ -16887,7 +16994,7 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 86.36) (xy 368.3 86.36)
+			(xy 367.03 109.22) (xy 368.3 109.22)
 		)
 		(stroke
 			(width 0)
@@ -16927,7 +17034,7 @@
 	)
 	(wire
 		(pts
-			(xy 354.33 88.9) (xy 353.06 88.9)
+			(xy 354.33 111.76) (xy 353.06 111.76)
 		)
 		(stroke
 			(width 0)
@@ -17759,7 +17866,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 83.82) (xy 354.33 83.82)
+			(xy 353.06 106.68) (xy 354.33 106.68)
 		)
 		(stroke
 			(width 0)
@@ -17889,7 +17996,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 111.76) (xy 367.03 111.76)
+			(xy 368.3 88.9) (xy 367.03 88.9)
 		)
 		(stroke
 			(width 0)
@@ -18470,7 +18577,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 109.22) (xy 354.33 109.22)
+			(xy 353.06 86.36) (xy 354.33 86.36)
 		)
 		(stroke
 			(width 0)
@@ -19643,7 +19750,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 106.68) (xy 367.03 106.68)
+			(xy 368.3 83.82) (xy 367.03 83.82)
 		)
 		(stroke
 			(width 0)
@@ -19893,7 +20000,7 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 86.36) (xy 354.33 86.36)
+			(xy 353.06 109.22) (xy 354.33 109.22)
 		)
 		(stroke
 			(width 0)
@@ -28220,7 +28327,43 @@
 			"AAAAAED8d+T5fwAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcGXQv/l/AABHYaIYCPxN9IwPtvoA"
 			"mb7DMAAAAAAAAACQeTIIfAEAAAAAAAAAAAAA0AMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 			"AADwu3FHfAEAAAAAAAAAAAAAAACAPwAAAABAiitUfAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-			"AAAAAAAAAAAABwAAAAAAAAAIAAAAAA=="
+			"AAAAAAAAAAAABwAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAADyqtQEAAAAAJAmAAAAAAAAUHsDwOgBAADwegPA6AEAAAAA"
+			"AAAAAAAA4MKCCgAAAACx3tMEAAAAAJEmAAAAAAAAgHsDwOgBAAAgewPA6AEAAAAAAAAAAAAAGTaA"
+			"CgAAAABNd9MEAAAAAJImAAAAAAAAsHsDwOgBAABQewPA6AEAAAAAAAAAAAAACjaACgAAAABMd9ME"
+			"AAAAAJMmAAAAAAAA4HsDwOgBAACAewPA6AEAAAAAAAAAAAAAFqF9CgAAAABMd9MEAAAAAJQmAAAA"
+			"AAAA4GwDwOgBAACwewPA6AEAAAQAAAAAAAAAmJ94CgAAAABZAABZh/iFAAArhAbpAQAA8H4loegB"
+			"AADgewPA6AEAAAAAAAAAAAAAr1J2CgAAAAAG19UEAAAAAJYmAAAAAAAAcHwDwOgBAAAQfAPA6AEA"
+			"AAAAAAAAAAAANL10CgAAAACf/dYEAAAAAJcmAAAAAAAAoHwDwOgBAABAfAPA6AEAAAAAAAAAAAAA"
+			"j+t+CgAAAAD6K+EEAAAAAJgmAAAAAAAA0HwDwOgBAABwfAPA6AEAAAgAAAAAAAAA6hmJCgAAAACf"
+			"/dYEAAAAAJkmAAAAAAAAAH0DwOgBAACgfAPA6AEAAAAAAAAAAAAAcYSHCgAAAAAH19UEAAAAAJom"
+			"AAAAAAAAMH0DwOgBAADQfAPA6AEAAAAAAAAAAAAAhzeFCgAAAAD2qtQEAAAAAJsmAAAAAAAAYH0D"
+			"wOgBAAAAfQPA6AEAAAAAAAAAAAAAfzeFCgAAAADyqtQEAAAAAJwmAAAAAAAAkH0DwOgBAAAwfQPA"
+			"6AEAAAAAAAAAAAAA4MKCCgAAAACx3tMEAAAAAJ0mAAAAAAAAwH0DwOgBAABgfQPA6AEAAAAAAAAA"
+			"AAAAGTaACgAAAABNd9MEAAAAAJ4mAAAAAAAA8H0DwOgBAACQfQPA6AEAAAAAAAAAAAAACjaACgAA"
+			"AABMd9MEAAAAAJ8mAAAAAAAAIH4DwOgBAADAfQPA6AEAAAAAAAAAAAAAFqF9CgAAAABMd9MEAAAA"
+			"AKAmAAAAAAAAUHsDwOgBAADwfQPA6AEAAAQAAAAAAAAAAAAAAAAAAAA1AAA1o/iFAMBb8LToAQAA"
+			"cEvH1egBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
 		)
 	)
 	(label "EN"
@@ -28284,7 +28427,7 @@
 		(uuid "1afd9973-e6b8-4377-83df-f31b7764608b")
 	)
 	(label "RCLK"
-		(at 353.06 109.22 180)
+		(at 353.06 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -28323,8 +28466,18 @@
 		)
 		(uuid "1e7d480e-769d-4cdf-a785-de1ffe047ee1")
 	)
+	(label "SER_RIGHT"
+		(at 151.13 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e8f4c35-0481-43ad-93a5-e329943df03c")
+	)
 	(label "GRID_R1"
-		(at 353.06 106.68 180)
+		(at 353.06 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -28483,6 +28636,16 @@
 		)
 		(uuid "4921ded0-6467-481c-a1f4-83ea19655968")
 	)
+	(label "SER_LEFT"
+		(at 151.13 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a72322c-3583-4745-9aac-f39e1069ffad")
+	)
 	(label "USB_D_DN"
 		(at 151.13 88.9 0)
 		(effects
@@ -28623,6 +28786,16 @@
 		)
 		(uuid "62f82874-585f-45ff-ba7c-c06dae06eceb")
 	)
+	(label "SER_RIGHT"
+		(at 368.3 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a2aa044-4a40-48bf-a374-33471e5bd846")
+	)
 	(label "BTN3"
 		(at 157.48 222.25 0)
 		(effects
@@ -28634,7 +28807,7 @@
 		(uuid "6a43fc5c-bd8a-4e39-aef0-1e8eaccf9d8e")
 	)
 	(label "GRID_L1"
-		(at 353.06 83.82 180)
+		(at 353.06 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -28714,7 +28887,7 @@
 		(uuid "7cadd0d1-a428-48e5-aae6-48c71a0e6225")
 	)
 	(label "RCLK"
-		(at 353.06 86.36 180)
+		(at 353.06 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -28744,7 +28917,7 @@
 		(uuid "919fcdbd-36e3-4121-8293-f56be5537fa1")
 	)
 	(label "SRCLK"
-		(at 368.3 86.36 0)
+		(at 368.3 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -28814,7 +28987,7 @@
 		(uuid "a9eeb2d3-315f-44d4-85fe-f605c3060207")
 	)
 	(label "{slash}SRCLR"
-		(at 353.06 88.9 180)
+		(at 353.06 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -28893,8 +29066,18 @@
 		)
 		(uuid "c20af7b4-81ad-4b5f-8180-f76c9366818f")
 	)
+	(label "SER_LEFT"
+		(at 368.3 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c20c63e4-a579-4e1e-bf6b-14f329e3c3f8")
+	)
 	(label "{slash}SRCLR"
-		(at 353.06 111.76 180)
+		(at 353.06 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -28913,18 +29096,8 @@
 		)
 		(uuid "c44078d1-14c8-45d3-9910-573362bdd4df")
 	)
-	(label "SER_RIGHT"
-		(at 151.13 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8f1c07b-ec0d-4865-905a-005026bcf721")
-	)
 	(label "GRID_L2"
-		(at 368.3 83.82 0)
+		(at 368.3 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -28932,26 +29105,6 @@
 			(justify left bottom)
 		)
 		(uuid "cb8c3181-fcf4-4db1-86c9-d0544d936f4d")
-	)
-	(label "SER_LEFT"
-		(at 151.13 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cf4dc659-dfd1-427b-9c52-ada3dc64e731")
-	)
-	(label "SER_LEFT"
-		(at 368.3 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d1ea44d8-794b-4d5d-9d34-7e4c9b77cacf")
 	)
 	(label "GRID_L2"
 		(at 251.46 87.63 0)
@@ -28974,7 +29127,7 @@
 		(uuid "d4c75f40-611d-446a-a972-91a71faac793")
 	)
 	(label "SRCLK"
-		(at 368.3 109.22 0)
+		(at 368.3 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -29002,16 +29155,6 @@
 			(justify left bottom)
 		)
 		(uuid "da6c89e1-1686-43ef-8851-8e5c86dd31f0")
-	)
-	(label "SER_RIGHT"
-		(at 368.3 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dbad83e3-4d37-4cd6-a6f7-a3042e8ec8ce")
 	)
 	(label "GPIO41"
 		(at 151.13 111.76 0)
@@ -29084,7 +29227,7 @@
 		(uuid "ed9317c3-491a-46e2-897b-32f7d3eb466d")
 	)
 	(label "GRID_R2"
-		(at 368.3 106.68 0)
+		(at 368.3 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -30941,6 +31084,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 270.51 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21bfa845-a335-4ca0-a848-aa26b7522bdd")
+		(property "Reference" "#PWR092"
+			(at 270.51 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 270.51 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 270.51 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 270.51 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "668cafdf-5715-4d6e-a27c-1f57a605955e")
+		)
+		(instances
+			(project "VFDClock"
+				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
+					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "VFDClock_custom_lib:IV-22_VFD_Tube")
 		(at 278.13 99.06 90)
 		(unit 1)
@@ -31302,75 +31511,6 @@
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
 					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 82.55 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "240f948b-6868-438a-87ac-77b6d11d93d2")
-		(property "Reference" "C1"
-			(at 82.804 78.486 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22u"
-			(at 82.804 81.026 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 83.5152 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 82.55 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a44c912f-83f2-4dce-a543-f899c793bba0")
-		)
-		(pin "1"
-			(uuid "1b564fa9-59c1-426b-9e53-c4c9b6925f24")
-		)
-		(instances
-			(project ""
-				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
-					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -34181,6 +34321,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 270.51 31.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64e8d378-9e6d-4929-904e-5b03084edf0f")
+		(property "Reference" "H3"
+			(at 273.05 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 273.05 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
+			(at 270.51 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 270.51 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 270.51 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02c43141-15a4-47be-aa34-9fca3eff3d8c")
+		)
+		(instances
+			(project "VFDClock"
+				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 83.82 109.22 0)
 		(unit 1)
@@ -34248,7 +34455,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
-		(at 359.41 86.36 0)
+		(at 359.41 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34257,15 +34464,15 @@
 		(fields_autoplaced yes)
 		(uuid "67d560f8-748c-404a-9d6d-0021184a3f4e")
 		(property "Reference" "J2"
-			(at 360.68 77.47 0)
+			(at 360.68 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "L_SIG_CONN"
-			(at 360.68 80.01 0)
+		(property "Value" "R_SIG_CONN"
+			(at 360.68 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34273,7 +34480,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal"
-			(at 359.41 86.36 0)
+			(at 359.41 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34282,7 +34489,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 359.41 86.36 0)
+			(at 359.41 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34291,7 +34498,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 359.41 86.36 0)
+			(at 359.41 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34321,6 +34528,72 @@
 			(project ""
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 270.51 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a4e7c52-c9a6-4b8e-85c0-19be7806cea7")
+		(property "Reference" "#PWR094"
+			(at 270.51 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 270.51 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e54afa47-b755-48c6-b647-448b7c85e356")
+		)
+		(instances
+			(project "VFDClock"
+				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -34796,6 +35069,75 @@
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 82.55 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "774dedce-8aea-4fba-8811-49490796236b")
+		(property "Reference" "C1"
+			(at 82.804 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 82.804 81.026 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A"
+			(at 83.5152 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 82.55 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36ccc6a8-98f5-4962-b8ac-58e791d4f331")
+		)
+		(pin "2"
+			(uuid "9a65f036-0616-4aad-8790-8ae5b86da116")
+		)
+		(instances
+			(project "VFDClock"
+				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -36069,7 +36411,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9680c328-dbe9-4750-ab21-51bcefe4201a")
 		(property "Reference" "R17"
@@ -37420,6 +37762,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 270.51 19.05 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a85668b5-29b2-4439-99fc-0de7b6c15f48")
+		(property "Reference" "H1"
+			(at 273.05 16.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 273.05 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
+			(at 270.51 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 270.51 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 270.51 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0b424da-07da-4225-b19b-ed9a02c713d8")
+		)
+		(instances
+			(project ""
+				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 35.56 229.87 0)
 		(unit 1)
@@ -37480,6 +37889,72 @@
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
 					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 293.37 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aae5924d-1ec6-40ad-abd3-c0d63b5f5465")
+		(property "Reference" "#PWR093"
+			(at 293.37 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 293.37 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 293.37 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 293.37 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 293.37 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eaa77390-4950-4cad-b537-b6972486af4c")
+		)
+		(instances
+			(project "VFDClock"
+				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -38828,7 +39303,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
-		(at 359.41 109.22 0)
+		(at 359.41 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -38837,15 +39312,15 @@
 		(fields_autoplaced yes)
 		(uuid "c7b1c16e-de58-4dcc-a3ec-ac3d14b7cf21")
 		(property "Reference" "J5"
-			(at 360.68 100.33 0)
+			(at 360.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R_SIG_CONN"
-			(at 360.68 102.87 0)
+		(property "Value" "L_SIG_CONN"
+			(at 360.68 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38853,7 +39328,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal"
-			(at 359.41 109.22 0)
+			(at 359.41 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38862,7 +39337,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 359.41 109.22 0)
+			(at 359.41 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38871,7 +39346,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 359.41 109.22 0)
+			(at 359.41 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39313,7 +39788,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d0304c70-cba2-426f-83cb-e96836155603")
 		(property "Reference" "R20"
 			(at 391.16 223.5199 0)
@@ -41081,6 +41556,73 @@
 			(project "VFDClock"
 				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
 					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 293.37 19.05 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9e6e10c-66a1-435d-9fe2-43101e40b129")
+		(property "Reference" "H2"
+			(at 295.91 16.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 295.91 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom"
+			(at 293.37 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 293.37 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 293.37 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d578912b-00f7-492d-9808-2fe7d61e62ad")
+		)
+		(instances
+			(project "VFDClock"
+				(path "/34951e98-25fa-4bcc-a56f-5aa93e8633e9"
+					(reference "H2")
 					(unit 1)
 				)
 			)
