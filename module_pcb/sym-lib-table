@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Vacuum_Tubes")(type "KiCad")(uri "${KIPRJMOD}/Vacuum_Tubes.kicad_sym")(options "")(descr ""))
+  (lib (name "VFDClock_custom_lib")(type "KiCad")(uri "${KIPRJMOD}/VFDClock_custom_lib.kicad_sym")(options "")(descr ""))
+  (lib (name "RS3K-0524S_H3")(type "KiCad")(uri "${KIPRJMOD}/Models/RS3K-0524S_H3.kicad_sym")(options "")(descr ""))
+)
