@@ -65,16 +65,16 @@
       ],
       "drc_exclusions": [
         [
-          "lib_footprint_mismatch|148790000|125055000|e3a9cb9b-73fe-4643-9f0a-7e78f8b87625|00000000-0000-0000-0000-000000000000",
-          "Replaced with a more suitable connector"
+          "lib_footprint_mismatch|155325000|98510000|6d5fb141-0335-4532-95ca-086cb3ebd353|00000000-0000-0000-0000-000000000000",
+          ""
         ],
         [
-          "lib_footprint_mismatch|148790000|130055000|6d5fb141-0335-4532-95ca-086cb3ebd353|00000000-0000-0000-0000-000000000000",
-          "Replaced with a more suitable connector"
+          "lib_footprint_mismatch|174400000|98510000|e3a9cb9b-73fe-4643-9f0a-7e78f8b87625|00000000-0000-0000-0000-000000000000",
+          ""
         ],
         [
-          "lib_footprint_mismatch|175900000|112100000|7902010d-726d-42cf-b6c1-af35317c254a|00000000-0000-0000-0000-000000000000",
-          "Custom inductor"
+          "lib_footprint_mismatch|179980000|101757500|7902010d-726d-42cf-b6c1-af35317c254a|00000000-0000-0000-0000-000000000000",
+          ""
         ]
       ],
       "meta": {
