@@ -53,3 +53,4 @@ dkms.conf
 /pcb/VFDClock-backups
 /separator_pcb/Separator-backups
 /pcb/Blender
+/module_pcb/Module-backups
