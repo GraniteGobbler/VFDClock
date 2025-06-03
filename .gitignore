@@ -54,3 +54,6 @@ dkms.conf
 /separator_pcb/Separator-backups
 /pcb/Blender
 /module_pcb/Module-backups
+/module_pcb/production/backups
+/separator_pcb/production/backups
+/pcb/production/backups
