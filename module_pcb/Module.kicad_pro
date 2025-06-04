@@ -612,7 +612,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../hw/Module.step",
       "svg": "",
       "vrml": ""
     },
