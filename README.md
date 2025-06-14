@@ -1,4 +1,8 @@
 # VFDClock
 Clock with 7-segment VFDs
 
-<img src="img/main/top.png ">
+![Front Render](img/render.png)
+
+![Detail Render](img/render1.png)
+
+![Main Board](img/main/top.png)
