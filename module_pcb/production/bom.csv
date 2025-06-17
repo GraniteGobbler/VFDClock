@@ -1,7 +1,7 @@
 ﻿Designator,Footprint,Quantity,Value,LCSC Part #
 "C1, C10, C4, C7",0805,4,100n,
 "C2, C6, C8",CP_EIA-3216-18_Kemet-A,3,10u,
-"C3, C9",CP_EIA-3528-15_AVX-H,2,22u,
+"C3, C9",CP_EIA-3216-18_Kemet-A,2,22u,
 C5,0805,1,1u,
 "D1, D2",0603,2,XGD10603MR,
 J1,PinSocket_2x03_P2.54mm_Horizontal,1,L_SIG_CONN,
