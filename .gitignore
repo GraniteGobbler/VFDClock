@@ -57,3 +57,4 @@ dkms.conf
 /module_pcb/production/backups
 /separator_pcb/production/backups
 /pcb/production/backups
+/img/Blender files/*.blend1
