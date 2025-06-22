@@ -1,8 +1,8 @@
 # VFDClock
-Clock with 7-segment VFDs
+A table clock with 7-segment VFD tubes running on an ESP32-S3 MCU.
 
 ![Front Render](img/render.png)
 
-![Detail Render](img/render1.png)
 
-![Main Board](img/main/top.png)
+## Showcase
+![Board Assembly](img/PCB%20renders/assembly_top_detail.png)
