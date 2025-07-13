@@ -58,3 +58,9 @@ dkms.conf
 /separator_pcb/production/backups
 /pcb/production/backups
 /img/Blender files/*.blend1
+/sw/.vscode
+/sw/build
+/sw/vfd_blink/build
+/sw/vfd_blink/.vscode
+/sw/vfd_hello_world/build
+/sw/vfd_hello_world/.vscode
