@@ -1,0 +1,2 @@
+source C:/Users/Chris/Desktop/esp-idf-ds3231-master/build/bootloader/gdbinit/symbols
+source C:/Users/Chris/Desktop/esp-idf-ds3231-master/build/bootloader/gdbinit/connect
