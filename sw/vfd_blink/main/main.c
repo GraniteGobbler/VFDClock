@@ -16,7 +16,7 @@
 /* Defines */
 #define LED_Power   GPIO_NUM_1 // GPIO pin 1 → LED D4
 #define LED_MCU     GPIO_NUM_2 // GPIO pin 2 → LED D5
-#define VFD_REFRESH_PERIOD  11111 // 8333*2 = 16666 us = 60 fps
+#define VFD_REFRESH_PERIOD  10000 // 8333*2 = 16666 us = 60 fps
 
 static const char* TAG = "VFDClock";
 bool mux_select = 0;
@@ -26,8 +26,6 @@ uint8_t vfd_display_number = 0;
 // Handles
 TaskHandle_t ledBlinkTaskHandle = NULL;
 TaskHandle_t CounterTaskHandle = NULL;
-QueueHandle_t VFD_DisplayQueueHandle;
-
 
 
 // Functions
