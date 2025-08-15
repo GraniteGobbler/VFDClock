@@ -66,3 +66,4 @@ dkms.conf
 /sw/vfd_hello_world/.vscode
 /sw/esp-idf-ds3231-master/build
 /sw/esp-idf-ds3231-master/.vscode
+/sw/vfd_driver_with_rtc/build

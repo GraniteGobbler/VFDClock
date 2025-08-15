@@ -58,7 +58,7 @@ void mux_callback(void *param){
 
 
 
-/* LED Task*/
+/* LED Blink Task*/
 void ledBlinkTask(void *pvParameters){
     // Turn Power LED on when "power is present"
     gpio_set_level(LED_Power, 0); 
