@@ -27,11 +27,12 @@
 #define LED_Power   GPIO_NUM_1 // GPIO pin 1 → LED D4
 #define LED_MCU     GPIO_NUM_2 // GPIO pin 2 → LED D5
 #define VFD_REFRESH_PERIOD  8333 // This is half the time (in microseconds) it takes to refresh the whole display, since we are muxing the "tens" digit and the "ones" digit 
-								  // 10000*2 = 20000 us = 50 fps
+								 // 10000*2 = 20000 us = 50 fps
 
 static const char* TAG = "VFDClock";
 bool mux_select = 0;
 uint8_t vfd_display_number = 0;
+char vfd_display_string[7];
  
 
 #if (ESP_IDF_VERSION >= ESP_IDF_VERSION_VAL(5, 0, 0))
@@ -190,6 +191,7 @@ void getClock(void *pvParameters)
 		}
 
 		vfd_display_number = (uint8_t) rtcinfo.tm_min;
+		// sprintf(vfd_display_string, "%02d%02d%02d", rtcinfo.tm_hour, rtcinfo.tm_min, rtcinfo.tm_sec);
 
 		ESP_LOGI(pcTaskGetName(0), "%04d-%02d-%02d %02d:%02d:%02d, %.2f deg Cel",
 				 rtcinfo.tm_year, rtcinfo.tm_mon + 1,
@@ -303,6 +305,7 @@ void ledBlinkTask(void *pvParameters){
 void mux_callback(void *param){
     
     vfd_value(vfd_display_number, mux_select);
+	// vfd_value_str(vfd_display_string, mux_select);
     mux_select = !mux_select;
 }
 
