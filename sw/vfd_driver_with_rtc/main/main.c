@@ -26,7 +26,7 @@
 /* Defines */
 #define LED_Power   GPIO_NUM_1 // GPIO pin 1 → LED D4
 #define LED_MCU     GPIO_NUM_2 // GPIO pin 2 → LED D5
-#define VFD_REFRESH_PERIOD  10000 // This is half the time (in microseconds) it takes to refresh the whole display, since we are muxing the "tens" digit and the "ones" digit 
+#define VFD_REFRESH_PERIOD  8333 // This is half the time (in microseconds) it takes to refresh the whole display, since we are muxing the "tens" digit and the "ones" digit 
 								  // 10000*2 = 20000 us = 50 fps
 
 static const char* TAG = "VFDClock";
@@ -59,7 +59,6 @@ RTC_DATA_ATTR static int boot_count = 0;
 // Handles
 TaskHandle_t ledBlinkTaskHandle = NULL;
 TaskHandle_t CounterTaskHandle = NULL;
-QueueHandle_t VFD_DisplayQueueHandle;
 
 
 // Functions
@@ -190,10 +189,12 @@ void getClock(void *pvParameters)
 			while (1) { vTaskDelay(1); }
 		}
 
-		ESP_LOGI(pcTaskGetName(0), "%04d-%02d-%02d %02d:%02d:%02d, %.2f deg Cel", 
-			rtcinfo.tm_year, rtcinfo.tm_mon + 1,
-			rtcinfo.tm_mday, rtcinfo.tm_hour, rtcinfo.tm_min, rtcinfo.tm_sec, temp);
-	vTaskDelayUntil(&xLastWakeTime, 100);
+		vfd_display_number = (uint8_t) rtcinfo.tm_min;
+
+		ESP_LOGI(pcTaskGetName(0), "%04d-%02d-%02d %02d:%02d:%02d, %.2f deg Cel",
+				 rtcinfo.tm_year, rtcinfo.tm_mon + 1,
+				 rtcinfo.tm_mday, rtcinfo.tm_hour, rtcinfo.tm_min, rtcinfo.tm_sec, temp);
+		vTaskDelayUntil(&xLastWakeTime, 100);
 	}
 }
 
@@ -288,15 +289,15 @@ void ledBlinkTask(void *pvParameters){
 }
 
 /*Counter Task*/
-void CounterTask(void *pvParameters){
-    uint8_t cnt = 0;
-    while (1){
+// void CounterTask(void *pvParameters){
+//     uint8_t cnt = 0;
+//     while (1){
         
-        vfd_display_number = (cnt++) % 100;
+//         vfd_display_number = (cnt++) % 100;
 
-        vTaskDelay(pdMS_TO_TICKS(1000));
-    }
-}
+//         vTaskDelay(pdMS_TO_TICKS(1000));
+//     }
+// }
 
 /* Timer callbacks */
 void mux_callback(void *param){
@@ -358,13 +359,13 @@ void app_main()
 		&ledBlinkTaskHandle // Task handle
 	);
 
-	xTaskCreate(
-		CounterTask,	   // Task func
-		"Counter task",	   // Task name
-		2048,			   // Stack size
-		NULL,			   // Task params
-		1,				   // Task priority
-		&CounterTaskHandle // Task handle
-	);
+	// xTaskCreate(
+	// 	CounterTask,	   // Task func
+	// 	"Counter task",	   // Task name
+	// 	2048,			   // Stack size
+	// 	NULL,			   // Task params
+	// 	1,				   // Task priority
+	// 	&CounterTaskHandle // Task handle
+	// );
 
 }
