@@ -176,17 +176,27 @@ void vfd_value(uint8_t value, bool digit_select){
 
 
 
-void vfd_update_str(uint8_t left_bits, uint8_t mid_bits, uint8_t right_bits){
+void vfd_update_str(uint8_t value, uint8_t display_select){
 
-    for(uint8_t i = 0; i < sizeof(left_bits) * 8; i++){
+    enum display_id{LEFT_DISPLAY, MIDDLE_DISPLAY, RIGHT_DISPLAY};
 
-        gpio_set_level(SER_LEFT, left_bits & 1); // Write LSB of value to SER
-        gpio_set_level(SER_MID, mid_bits & 1);
-        gpio_set_level(SER_RIGHT, right_bits & 1);
+    for(uint8_t i = 0; i < sizeof(value) * 8; i++){
+        
+        switch (display_select){
+            case LEFT_DISPLAY:
+                gpio_set_level(SER_LEFT, value & 1); // Write LSB of value to SER        
+                break;
 
-        left_bits >>= 1;
-        mid_bits >>= 1;
-        right_bits >>= 1;
+            case MIDDLE_DISPLAY:
+                gpio_set_level(SER_MID, value & 1);
+                break;
+
+            case RIGHT_DISPLAY:
+                gpio_set_level(SER_RIGHT, value & 1);
+                break;    
+        }   
+
+        value >>= 1;
 
         gpio_set_level(SRCLK, 1); // Tick the shift register storage
 		gpio_set_level(SRCLK, 0);
@@ -248,30 +258,27 @@ void vfd_value_str(const char *input_str, bool position){
 
     
 
-    for(uint8_t i = 0; i < 6; i++){
-        char character = ' ';
-                            // Digit mux - DRIVER1 = tens, DRIVER2 = ones
-        if(position == 0){  // 0 = right position, 1 = left position
-            gpio_set_level(DRIVER1, 0);
-            gpio_set_level(DRIVER2, 1);
-
-            character = input_str[i/2+1];
-        }
-        else{
+    for(uint8_t i = 0; i < 3; i++){
+        char character = input_str[2*i + position];
+        
+        // Digit mux - DRIVER1 = tens, DRIVER2 = ones
+        if(position == 0){  // 0 = left position, 1 = right position
             gpio_set_level(DRIVER1, 1);
             gpio_set_level(DRIVER2, 0);
-
-            character = input_str[i/2];
+        }
+        else{
+            gpio_set_level(DRIVER1, 0);
+            gpio_set_level(DRIVER2, 1);
         }
 
         if (character >= '0' && character <= '9'){
-            vfd_update(number_map[character - '0']);
+            vfd_update_str(number_map[character - '0'], i);
         }
         else if (character >= 'a' && character <= 'z'){
-            vfd_update(character_map[character - 'a']);
+            vfd_update_str(character_map[character - 'a'], i);
         }
         else if (character >= 'A' && character <= 'Z'){
-            vfd_update(character_map[character - 'A']);
+            vfd_update_str(character_map[character - 'A'], i);
         }
     }  
 }

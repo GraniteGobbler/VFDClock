@@ -61,7 +61,7 @@ void vfd_update(uint8_t value);
 void vfd_value(uint8_t value, bool digit_select);
 
 /* Update shift register */
-void vfd_update_str(uint8_t left_bits, uint8_t mid_bits, uint8_t right_bits);
+void vfd_update_str(uint8_t value, uint8_t display_select);
 
 /* Display a string */
 void vfd_value_str(const char *input_str, bool digit_select);
