@@ -14,13 +14,18 @@
 #include "vfd_driver.h"
 
 /* Defines */
-#define LED_Power   GPIO_NUM_1 // GPIO pin 1 → LED D4
-#define LED_MCU     GPIO_NUM_2 // GPIO pin 2 → LED D5
+#define LED_Power   GPIO_NUM_1 // LED D4
+#define LED_MCU     GPIO_NUM_2 // LED D5
+#define BTN1        GPIO_NUM_5 // Rightmost button
+#define BTN2        GPIO_NUM_6
+#define BTN3        GPIO_NUM_7
+#define BTN4        GPIO_NUM_15 // Leftmost button
 #define VFD_REFRESH_PERIOD  10000 // 8333*2 = 16666 us = 60 fps
 
 static const char* TAG = "VFDClock";
 bool mux_select = 0;
 uint8_t vfd_display_number = 0;
+char vfd_display_string[] = "abcdef";   // Variable containing a string that is to be displayed
 
 
 // Handles
@@ -30,27 +35,39 @@ TaskHandle_t CounterTaskHandle = NULL;
 
 // Functions
 /* LED Config */
-void ledConfig(void){
+void GPIOConfig(void){
     /*  GPIO Config */
-    gpio_config_t GPIO_CONF_LED;
-    // Bit mask
-    GPIO_CONF_LED.pin_bit_mask = (1ULL << LED_Power) | (1ULL << LED_MCU);
-    // Pin mode
-    GPIO_CONF_LED.mode = GPIO_MODE_OUTPUT;
-    // No pull-up/pull-down resistors.
-    GPIO_CONF_LED.pull_up_en = GPIO_PULLUP_DISABLE;
-    GPIO_CONF_LED.pull_down_en = GPIO_PULLDOWN_DISABLE;
-    // No interrupt enabled.
-    GPIO_CONF_LED.intr_type = GPIO_INTR_DISABLE;
+    gpio_config_t GPIO_CONF_LED = 
+    {
+    .pin_bit_mask = (1ULL << LED_Power) | (1ULL << LED_MCU),    // Bit mask
+    .mode = GPIO_MODE_OUTPUT,   // Pin mode
+    .pull_up_en = GPIO_PULLUP_DISABLE,  // No pull-up/pull-down resistors.
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE, // No interrupt enabled.
+    };
+
+    gpio_config_t GPIO_CONF_BUTTONS = 
+    {
+    .pin_bit_mask = (1ULL << BTN1) | (1ULL << BTN2) | 
+                    (1ULL << BTN3) | (1ULL << BTN4), // Bit mask
+    .mode = GPIO_MODE_INPUT,   // Pin mode
+    .pull_up_en = GPIO_PULLUP_DISABLE,  // No pull-up/pull-down resistors.
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE, // No interrupt enabled.
+    };
+
     // Configure the GPIO with the settings.
     gpio_config(&GPIO_CONF_LED);
+    gpio_config(&GPIO_CONF_BUTTONS);
+
+
 }
 
 /* Timer callbacks */
 void mux_callback(void *param){
 
     // vfd_value(vfd_display_number, mux_select);
-    vfd_value_str("0a1b2c", mux_select);
+    vfd_value_str(vfd_display_string, mux_select);
     mux_select = !mux_select;
 }
 
@@ -78,12 +95,29 @@ void ledBlinkTask(void *pvParameters){
 
 /*Counter Task*/
 void CounterTask(void *pvParameters){
-    uint8_t cnt = 0;
+    // uint8_t cnt = 0;
+    char firstChar;
     while (1){
-        
-        vfd_display_number = (cnt++) % 100;
 
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        if(gpio_get_level(BTN4) != 1){
+
+            for(uint8_t j = 0; j < 12; j++){ // Repeat 6 times
+
+                firstChar = vfd_display_string[0]; // First character of the string
+
+                for (uint8_t i = 1; i < 7; i++){
+                    vfd_display_string[i - 1] = vfd_display_string[i];
+                }
+                vfd_display_string[5] = firstChar;
+
+                vTaskDelay(pdMS_TO_TICKS(400));
+            }
+        }
+        // sprintf(vfd_display_string, "klmnop");
+        
+        // vfd_display_number = (cnt++) % 100;
+
+        vTaskDelay(pdMS_TO_TICKS(100));
     }
 }
 
@@ -104,7 +138,7 @@ void app_main(void){
 
 
     /* Init */
-    ledConfig();
+    GPIOConfig();
     vfd_init();
 
     
