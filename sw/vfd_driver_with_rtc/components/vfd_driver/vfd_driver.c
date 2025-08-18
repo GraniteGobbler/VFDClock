@@ -109,18 +109,84 @@ void vfd_value(uint8_t value, bool digit_select){
 
 
 
-/* Update shift register */
-void vfd_update_str(uint8_t *value_array){
 
-    for(uint8_t i = 0; i < sizeof(value_array[0]) * 8; i++){
 
-        gpio_set_level(SER_LEFT, value_array[0] & 1); // Write LSB of value to SER
-        gpio_set_level(SER_MID, value_array[1] & 1);
-        gpio_set_level(SER_RIGHT, value_array[2] & 1);
 
-        for (uint8_t j = 0; j < 3; j++){
-            value_array[j] >>= 1;
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void vfd_update_str(uint8_t left_bits, uint8_t mid_bits, uint8_t right_bits){
+
+    for(uint8_t i = 0; i < sizeof(left_bits) * 8; i++){
+
+        gpio_set_level(SER_LEFT, left_bits & 1); // Write LSB of value to SER
+        gpio_set_level(SER_MID, mid_bits & 1);
+        gpio_set_level(SER_RIGHT, right_bits & 1);
+
+        left_bits >>= 1;
+        mid_bits >>= 1;
+        right_bits >>= 1;
 
         gpio_set_level(SRCLK, 1); // Tick the shift register storage
 		gpio_set_level(SRCLK, 0);
@@ -131,10 +197,10 @@ void vfd_update_str(uint8_t *value_array){
 }
 
 
-/* Display a string */
-void vfd_value_str(const char *input_str, bool digit_select){
+
+void vfd_value_str(const char *input_str, bool position){
     
-    static const uint8_t reg_values[10] = {
+    static const uint8_t number_map[10] = {
 
         //ABCDEFGH
         0b11101110, // 0
@@ -149,48 +215,66 @@ void vfd_value_str(const char *input_str, bool digit_select){
         0b11110110  // 9
     };
 
+    static const uint8_t character_map[26] = {
+
+        //ABCDEFGH
+        0b11111100,  // A
+        0b01011110,  // B
+        0b11001010,  // C
+        0b00111110,  // D
+        0b11011010,  // E
+        0b11011000,  // F
+        0b11001110,  // G
+        0b01111100,  // H
+        0b01001000,  // I
+        0b00101110,  // J
+        0b11011100,  // K
+        0b01001010,  // L
+        0b10001100,  // M
+        0b11101100,  // N
+        0b00011110,  // O
+        0b11111000,  // P
+        0b11110100,  // Q
+        0b00011000,  // R
+        0b11010110,  // S same as 5
+        0b01011010,  // T
+        0b00001110,  // U
+        0b01101110,  // V
+        0b01100010,  // W
+        0b01111100,  // X same as H
+        0b01110110,  // Y
+        0b10111010,  // Z same as 2
+    };
+
     
 
-    size_t len = strlen(input_str);
-
-    // We’ll assume max 2 digits since you’re using DRIVER1 + DRIVER2
-    // If you want more digits, expand with more DRIVER pins and loops.
-    if(len > 2) len = 2; 
-
-    for(size_t i = 0; i < len; i++) {
-        char c_left = input_str[len - 5 - i]; // rightmost digit first
-        char c_mid = input_str[len - 3 - i]; // rightmost digit first
-        char c_right = input_str[len - 1 - i]; // rightmost digit first
-
-        // if(c < '0' || c > '9'){
-        //     continue; // skip non-digits
-        // } 
-
-        uint8_t digit_left = c_left - '0';
-        uint8_t digit_mid = c_mid - '0';
-        uint8_t digit_right = c_right - '0';
-
-        if(i == 0) { // ones place
+    for(uint8_t i = 0; i < 6; i++){
+        char character = ' ';
+                            // Digit mux - DRIVER1 = tens, DRIVER2 = ones
+        if(position == 0){  // 0 = right position, 1 = left position
             gpio_set_level(DRIVER1, 0);
             gpio_set_level(DRIVER2, 1);
-        
-        } else {     // tens place
+
+            character = input_str[i/2+1];
+        }
+        else{
             gpio_set_level(DRIVER1, 1);
             gpio_set_level(DRIVER2, 0);
 
+            character = input_str[i/2];
         }
 
-        uint8_t output_array[3] = {
-            reg_values[digit_left],
-            reg_values[digit_mid],
-            reg_values[digit_right]
-        };
-
-        vfd_update_str(output_array);
-    }
-    
+        if (character >= '0' && character <= '9'){
+            vfd_update(number_map[character - '0']);
+        }
+        else if (character >= 'a' && character <= 'z'){
+            vfd_update(character_map[character - 'a']);
+        }
+        else if (character >= 'A' && character <= 'Z'){
+            vfd_update(character_map[character - 'A']);
+        }
+    }  
 }
-
 
 
 void vfd_clear(void){

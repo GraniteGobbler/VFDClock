@@ -48,8 +48,9 @@ void ledConfig(void){
 
 /* Timer callbacks */
 void mux_callback(void *param){
-    
-    vfd_value(vfd_display_number, mux_select);
+
+    // vfd_value(vfd_display_number, mux_select);
+    vfd_value_str("0a1b2c", mux_select);
     mux_select = !mux_select;
 }
 

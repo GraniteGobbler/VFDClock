@@ -24,6 +24,7 @@
 
 // Includes
 #include <stdio.h>
+#include <string.h>
 #include <math.h>
 #include <inttypes.h>
 #include "esp_log.h"
@@ -56,8 +57,14 @@ void vfd_init(void);
 /* Update shift register */
 void vfd_update(uint8_t value);
 
-/* Display a value */
+/* Display a number */
 void vfd_value(uint8_t value, bool digit_select);
+
+/* Update shift register */
+void vfd_update_str(uint8_t left_bits, uint8_t mid_bits, uint8_t right_bits);
+
+/* Display a string */
+void vfd_value_str(const char *input_str, bool digit_select);
 
 /* Clears the shift register storage*/
 void vfd_clear(void);

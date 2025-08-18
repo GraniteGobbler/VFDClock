@@ -32,7 +32,7 @@
 static const char* TAG = "VFDClock";
 bool mux_select = 0;
 uint8_t vfd_display_number = 0;
-char vfd_display_string[7];
+char vfd_display_string[] = "123456";
  
 
 #if (ESP_IDF_VERSION >= ESP_IDF_VERSION_VAL(5, 0, 0))
@@ -190,7 +190,7 @@ void getClock(void *pvParameters)
 			while (1) { vTaskDelay(1); }
 		}
 
-		vfd_display_number = (uint8_t) rtcinfo.tm_min;
+		// vfd_display_number = (uint8_t) rtcinfo.tm_min;
 		// sprintf(vfd_display_string, "%02d%02d%02d", rtcinfo.tm_hour, rtcinfo.tm_min, rtcinfo.tm_sec);
 
 		ESP_LOGI(pcTaskGetName(0), "%04d-%02d-%02d %02d:%02d:%02d, %.2f deg Cel",
@@ -304,8 +304,8 @@ void ledBlinkTask(void *pvParameters){
 /* Timer callbacks */
 void mux_callback(void *param){
     
-    vfd_value(vfd_display_number, mux_select);
-	// vfd_value_str(vfd_display_string, mux_select);
+    // vfd_value(vfd_display_number, mux_select);
+	vfd_value_str(vfd_display_string, mux_select);
     mux_select = !mux_select;
 }
 
