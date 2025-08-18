@@ -26,13 +26,17 @@
 /* Defines */
 #define LED_Power   GPIO_NUM_1 // GPIO pin 1 → LED D4
 #define LED_MCU     GPIO_NUM_2 // GPIO pin 2 → LED D5
+#define BTN1        GPIO_NUM_5 // Rightmost button
+#define BTN2        GPIO_NUM_6
+#define BTN3        GPIO_NUM_7
+#define BTN4        GPIO_NUM_15 // Leftmost button
 #define VFD_REFRESH_PERIOD  8333 // This is half the time (in microseconds) it takes to refresh the whole display, since we are muxing the "tens" digit and the "ones" digit 
 								 // 10000*2 = 20000 us = 50 fps
 
 static const char* TAG = "VFDClock";
 bool mux_select = 0;
 uint8_t vfd_display_number = 0;
-char vfd_display_string[] = "123456";
+char vfd_display_string[] = "000000";
  
 
 #if (ESP_IDF_VERSION >= ESP_IDF_VERSION_VAL(5, 0, 0))
@@ -52,6 +56,7 @@ char vfd_display_string[] = "123456";
 #endif
 
 #define IS_DST 1
+#define ONLINE_MODE 0
 
 // static const char *TAG = "DS3213";
 
@@ -106,7 +111,7 @@ static bool obtain_time(void)
 	return true;
 }
 
-
+#if ONLINE_MODE
 void setClock(void *pvParameters)
 {
 	// obtain time over NTP
@@ -162,6 +167,39 @@ void setClock(void *pvParameters)
 	ESP_LOGI(pcTaskGetName(0), "Entering deep sleep for %d seconds", deep_sleep_sec);
 	esp_deep_sleep(1000000LL * deep_sleep_sec);
 }
+#else
+void setClock(void *pvParameters)
+{
+	// Initialize RTC
+	i2c_dev_t dev;
+	if (ds3231_init_desc(&dev, I2C_NUM_0, CONFIG_SDA_GPIO, CONFIG_SCL_GPIO) != ESP_OK) {
+		ESP_LOGE(pcTaskGetName(0), "Could not init device descriptor.");
+		while (1) { vTaskDelay(1); }
+	}
+
+	struct tm time = {
+		.tm_year = 2025,
+		.tm_mon  = 8,  // 0-based
+		.tm_mday = 18,
+		.tm_hour = 12,
+		.tm_min  = 20,
+		.tm_sec  = 0
+	};
+
+	// Save the date and time to RTC
+	if (ds3231_set_time(&dev, &time) != ESP_OK) {
+		ESP_LOGE(pcTaskGetName(0), "Could not set time.");
+		while (1) { vTaskDelay(1); }
+	}
+	ESP_LOGI(pcTaskGetName(0), "Set initial date time done");
+
+	// goto deep sleep for deep_sleep_sec seconds
+	const int deep_sleep_sec = 10;
+	ESP_LOGI(pcTaskGetName(0), "Entering deep sleep for %d seconds", deep_sleep_sec);
+	esp_deep_sleep(1000000LL * deep_sleep_sec);
+}
+#endif
+
 
 void getClock(void *pvParameters)
 {
@@ -191,7 +229,7 @@ void getClock(void *pvParameters)
 		}
 
 		// vfd_display_number = (uint8_t) rtcinfo.tm_min;
-		// sprintf(vfd_display_string, "%02d%02d%02d", rtcinfo.tm_hour, rtcinfo.tm_min, rtcinfo.tm_sec);
+		sprintf(vfd_display_string, "%02d%02d%02d", rtcinfo.tm_hour, rtcinfo.tm_min, rtcinfo.tm_sec);
 
 		ESP_LOGI(pcTaskGetName(0), "%04d-%02d-%02d %02d:%02d:%02d, %.2f deg Cel",
 				 rtcinfo.tm_year, rtcinfo.tm_mon + 1,
@@ -254,21 +292,30 @@ void diffClock(void *pvParameters)
 }
 
 
-/* LED Config */
-void ledConfig(void){
+void GPIOConfig(void){
     /*  GPIO Config */
-    gpio_config_t GPIO_CONF_LED;
-    // Bit mask
-    GPIO_CONF_LED.pin_bit_mask = (1ULL << LED_Power) | (1ULL << LED_MCU);
-    // Pin mode
-    GPIO_CONF_LED.mode = GPIO_MODE_OUTPUT;
-    // No pull-up/pull-down resistors.
-    GPIO_CONF_LED.pull_up_en = GPIO_PULLUP_DISABLE;
-    GPIO_CONF_LED.pull_down_en = GPIO_PULLDOWN_DISABLE;
-    // No interrupt enabled.
-    GPIO_CONF_LED.intr_type = GPIO_INTR_DISABLE;
+    gpio_config_t GPIO_CONF_LED = 
+    {
+    .pin_bit_mask = (1ULL << LED_Power) | (1ULL << LED_MCU),    // Bit mask
+    .mode = GPIO_MODE_OUTPUT,   // Pin mode
+    .pull_up_en = GPIO_PULLUP_DISABLE,  // No pull-up/pull-down resistors.
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE, // No interrupt enabled.
+    };
+
+    gpio_config_t GPIO_CONF_BUTTONS = 
+    {
+    .pin_bit_mask = (1ULL << BTN1) | (1ULL << BTN2) | 
+                    (1ULL << BTN3) | (1ULL << BTN4), // Bit mask
+    .mode = GPIO_MODE_INPUT,   // Pin mode
+    .pull_up_en = GPIO_PULLUP_DISABLE,  // No pull-up/pull-down resistors.
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE, // No interrupt enabled.
+    };
+
     // Configure the GPIO with the settings.
     gpio_config(&GPIO_CONF_LED);
+    gpio_config(&GPIO_CONF_BUTTONS);
 }
 
 /* LED Blink Task*/
@@ -349,7 +396,7 @@ void app_main()
 	esp_timer_start_periodic(mux_timer_handle, VFD_REFRESH_PERIOD);
 
 	/* Init */
-	ledConfig();
+	GPIOConfig();
 	vfd_init();
 
 	/*  FreeRTOS tasks  */
