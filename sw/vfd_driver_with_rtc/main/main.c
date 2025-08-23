@@ -56,7 +56,7 @@ char vfd_display_string[] = "000000";
 #endif
 
 #define IS_DST 1
-#define ONLINE_MODE 0
+#define ONLINE_MODE 1
 
 // static const char *TAG = "DS3213";
 
